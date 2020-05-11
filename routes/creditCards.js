@@ -24,7 +24,7 @@ router.post('/add', (req, res)=>{
     };
     // TODO: 應該檢查表單進來的資料
 
-    const sql = "INSERT INTO `CreditCards`(`CreditCardNumber`, `CreditCardSafeCode`, `CreditCardName`, `CreditCardMonth`, `CreditCardYear`, `MemberID`) VALUES (?,?,?,?,?,?)";
+    const sql = "INSERT INTO `CreditCards`(`CreditCardNumber`, `CreditCardSafeCode`, `CreditCardName`, `CreditCardMonth`, `CreditCardYear`, `memberId`) VALUES (?,?,?,?,?,?)";
 
     db.queryAsync(sql, [
         req.body.creditCardNumber,
