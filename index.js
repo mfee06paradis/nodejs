@@ -135,7 +135,7 @@ app.get("/try-db",(req,res) =>{
 });
 app.use("/students", require(__dirname + "/routes/address_book"));
 app.use('/members', require(__dirname + '/routes/members'));
-app.use('/members', require(__dirname + '/routes/creditCards'));
+app.use('/creditcards', require(__dirname + '/routes/creditCards'));
 
 
 //路由網址正規表示法
